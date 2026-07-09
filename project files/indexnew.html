@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDI Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="container">
+
+        <h1>Human Development Index Prediction System</h1>
+
+        <p class="subtitle">
+            A Machine Learning Web Application using Flask
+        </p>
+
+        <form action="{{ url_for('result') }}" method="POST">
+
+            <input
+                type="number"
+                name="life"
+                step="0.01"
+                min="40"
+                max="100"
+                placeholder="Enter Life Expectancy"
+                required>
+
+            <input
+                type="number"
+                name="expected"
+                step="0.01"
+                min="0"
+                max="25"
+                placeholder="Enter Expected Years of Schooling"
+                required>
+
+            <input
+                type="number"
+                name="mean"
+                step="0.01"
+                min="0"
+                max="20"
+                placeholder="Enter Mean Years of Schooling"
+                required>
+
+            <input
+                type="number"
+                name="gni"
+                step="0.01"
+                min="0"
+                placeholder="Enter GNI Per Capita"
+                required>
+
+            <button type="submit" class="btn">
+                Predict
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

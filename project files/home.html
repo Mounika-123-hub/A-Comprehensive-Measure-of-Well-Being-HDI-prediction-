@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Development Index Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="container">
+
+        <h1>Human Development Index</h1>
+
+        <p class="subtitle">
+            A Machine Learning Web Application using Flask
+        </p>
+
+        <div class="content">
+
+            <p>
+                The <b>Human Development Index (HDI)</b> is a statistical measure developed by the
+                United Nations to evaluate the overall development of a country.
+            </p>
+
+            <br>
+
+            <p>
+                The prediction is based on four important indicators:
+            </p>
+
+            <ul>
+                <li>Life Expectancy at Birth</li>
+                <li>Expected Years of Schooling</li>
+                <li>Mean Years of Schooling</li>
+                <li>Gross National Income (GNI) Per Capita</li>
+            </ul>
+
+            <br>
+
+            <p>
+                This application uses a Machine Learning model to predict the Human Development Index
+                based on the values entered by the user.
+            </p>
+
+            <br>
+
+            <a href="{{ url_for('predict') }}">
+                <button class="btn">Get Started</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

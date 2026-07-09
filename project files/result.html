@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDI Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="container">
+
+        <h1>Human Development Index</h1>
+
+        <p class="subtitle">
+            A Machine Learning Web Application using Flask
+        </p>
+
+        <div class="result-box">
+
+            <h2>Prediction Result</h2>
+
+            <h3>{{ category }}</h3>
+
+            <h1 class="prediction">
+                {{ prediction }}
+            </h1>
+
+        </div>
+
+        <br>
+
+        <a href="{{ url_for('predict') }}">
+            <button class="btn">
+                Predict Again
+            </button>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
