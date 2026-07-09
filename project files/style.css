@@ -1,0 +1,280 @@
+/* ===========================
+   Global Styles
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+
+    background: url("images/worldmap.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:100vh;
+
+}
+
+/* Dark overlay */
+
+.overlay{
+
+    width:100%;
+    min-height:100vh;
+
+    background:rgba(0,0,0,0.45);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px;
+
+}
+
+/* Main Container */
+
+.container{
+
+    width:650px;
+
+    background:rgba(0,0,0,0.72);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:0 0 25px rgba(0,0,0,.8);
+
+}
+
+/* Heading */
+
+h1{
+
+    color:#ff2b2b;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+    font-weight:bold;
+
+}
+
+/* Subtitle */
+
+.subtitle{
+
+    color:#ffd54f;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+}
+
+/* Paragraph */
+
+p{
+
+    font-size:17px;
+
+    line-height:30px;
+
+    margin-bottom:15px;
+
+}
+
+/* List */
+
+ul{
+
+    text-align:left;
+
+    margin:20px 60px;
+
+}
+
+ul li{
+
+    margin-bottom:10px;
+
+    font-size:17px;
+
+}
+
+/* Form */
+
+form{
+
+    margin-top:20px;
+
+}
+
+/* Inputs */
+
+input,
+select{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:18px;
+
+    border-radius:30px;
+
+    border:2px solid #4fc3f7;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+input::placeholder{
+
+    color:#dddddd;
+
+}
+
+select{
+
+    color:white;
+
+}
+
+select option{
+
+    color:black;
+
+}
+
+/* Button */
+
+.btn,
+button{
+
+    width:220px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:linear-gradient(90deg,#4da6ff,#d946ef);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn:hover,
+button:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 20px #9c27b0;
+
+}
+
+/* Result Box */
+
+.result-box{
+
+    margin-top:20px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.result-box h2{
+
+    color:#ffffff;
+
+    margin-bottom:15px;
+
+}
+
+.result-box h3{
+
+    color:#7CFC00;
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+.prediction{
+
+    color:#00ff99;
+
+    font-size:55px;
+
+    font-weight:bold;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.container{
+
+    width:95%;
+
+    padding:25px;
+
+}
+
+h1{
+
+    font-size:32px;
+
+}
+
+.subtitle{
+
+    font-size:16px;
+
+}
+
+.prediction{
+
+    font-size:40px;
+
+}
+
+ul{
+
+    margin:20px;
+
+}
+
+}
